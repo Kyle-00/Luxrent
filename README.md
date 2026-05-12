@@ -38,22 +38,23 @@ We welcome contributions from the community and the team to help make LuxRent th
 
 1. **Fork the Repository:** Create your own copy of the project to work on.
 2. **Create a Feature Branch:**
-bash
+```bash
 git checkout -b feature/AmazingFeature
+```
 
 
 3. **Commit Your Changes:**
 
-bash
+```bash
     git commit -m 'Add some AmazingFeature'
-
+```
 4.  **Push to the Branch:**
-bash
+```bash
     git push origin feature/AmazingFeature
-
+```
 5.  **Open a Pull Request:** Describe your changes and submit for review.
 
-Coding Standards
+## Coding Standards
 *   Ensure all HTML is semantic and well-commented.
 *   Maintain the **Stone & Amber** color palette for all UI additions.
 *   Test responsiveness across multiple screen sizes before submitting.
@@ -61,16 +62,16 @@ Coding Standards
 
 ## Getting Started
 
-Prerequisites
+## Prerequisites
 Any modern web browser (Chrome, Firefox, Safari, or Edge).
 
-Installation
+## Installation
 1. **Clone the repository:**
    
-bash
+```bash
    git clone https://github.com/Kyle-00/luxrent.git
    cd luxrent
-
+```
 
 2. **Open the project:**
 Simply open the index.html file in your preferred browser to view the current build.
