@@ -1,0 +1,90 @@
+    /*
+  
+    */
+
+ /* Types of Selectors */
+ /* universal selector */
+ * {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+      }
+/* element selector */
+button {
+    padding: 8px;
+    background-color: blue;
+    color: white;
+    margin: 4px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+     }
+
+ body {
+            background-color: black;
+            color: darkgray;
+        } 
+        
+h1{
+            color: red;
+            font-style: bold;
+        }
+ h2{
+            color: orange;
+            font-style: normal;
+        }
+ h3{
+            color: yellow;
+            font-style: oblique;
+        }  
+
+img {
+            width: 500px;
+            height: 400px;
+            border-radius: 50%;
+         }
+p { 
+        font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-style: italic;
+        }  
+    
+    /* class selector */
+    .container {
+        border: 1px solid red;
+        width: 500px;
+        height: 200px;
+        background-color: azure;
+    }
+    /*logo-text*/
+    .logo-text {
+        border: 1px solid red;
+        width: 400px;
+        height: 200px;
+        background-color: rgb(254, 6, 6);
+        color: white;
+        font: bold; 
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #portfolio {
+        border: 4px dotted green
+
+    }
+    /* Attribute selector */
+    a[href] { 
+        color: white;
+     } 
+     /* Descendant selector */
+
+     div h4 {
+        color: red;
+     }
+  /*Child selector */
+     div > p {
+        color: green;
+     }   
