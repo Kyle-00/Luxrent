@@ -21,7 +21,7 @@ button {
      }
 
  body {
-            background-color: black;
+            background-color: beige;
             color: darkgray;
         } 
         
@@ -84,7 +84,46 @@ p {
      div h4 {
         color: red;
      }
+     div ul li {
+        color: blueviolet;
+     }
   /*Child selector */
      div > p {
         color: green;
      }   
+     /* Adjacent sibling selector */
+
+     h4 + nav {
+        background-color: green;
+        color: white;
+     }
+   /* General sibling selector */
+    h3 ~ p {
+        color: red;
+    }
+    /* Group selector */
+    h1, h2, h3 {
+        font-family: cambria; cochin, Georgia, Times, 'Times New Roman', serif;
+        color: tomato;
+    }
+    /* Interactive state*/
+    .cta:hover {
+        background-color: red;
+        color: white;
+    }
+    .cta-btn:active {
+        background-color: green;
+        color: white;
+    }
+
+    input:focus {
+        border: purple;
+    }
+    a::before {
+        content: "navigation link:";
+        color: red;
+    }
+    p::after {
+        content: " citation";
+        color: chocolate;
+    }
