@@ -1,6 +1,3 @@
-    /*
-  
-    */
 
  /* Types of Selectors */
  /* universal selector */
@@ -12,7 +9,7 @@
 /* element selector */
 button {
     padding: 8px;
-    background-color: blue;
+    background-color: maroon;
     color: white;
     margin: 4px;
     border: none;
@@ -21,16 +18,16 @@ button {
      }
 
  body {
-            background-color: beige;
-            color: darkgray;
+            background-color: black;
+            color: white;
         } 
         
 h1{
-            color: red;
+            color: orange;
             font-style: bold;
         }
  h2{
-            color: orange;
+            color: red;
             font-style: normal;
         }
  h3{
@@ -45,7 +42,7 @@ img {
          }
 p { 
         font-family: Arial, Helvetica, sans-serif;
-            color: white;
+            color: orange;
             font-style: italic;
         }  
     
@@ -58,26 +55,41 @@ p {
     }
     /*logo-text*/
     .logo-text {
-        border: 1px solid red;
-        width: 400px;
-        height: 200px;
-        background-color: rgb(254, 6, 6);
-        color: white;
-        font: bold; 
+        border: 1px solid whitesmoke;
+        width: 500px;
+        height: 400px;
+        background-color: whitesmoke;
+        color: black;
+        font: italic bold 20px/30px Arial, Helvetica, sans-serif; 
+        text-align: center;
+        text-decoration: underline;
+        padding: 2px;
     }
-
-    a {
-        text-decoration: none;
-        color: white;
+    /* this targets all table data and header cells. */
+    table, th, td {
+        border: 1px solid white;
+        border-collapse: collapse;
+        padding: 10px;
+        text-align: center;
+    }
+    .enterprise {
+        vertical-align: top;
+        text-align: center;
+        text-decoration: underline;
+        color: rgb(243, 8, 8);
+    }
+    .enterprise a {
+        text-decoration: underline;
+        color: rgb(255, 255, 255);
     }
 
     #portfolio {
-        border: 4px dotted green
+        border: 4px dotted yellow;
 
     }
     /* Attribute selector */
     a[href] { 
-        color: white;
+        color: orange;
      } 
      /* Descendant selector */
 
@@ -85,31 +97,32 @@ p {
         color: red;
      }
      div ul li {
-        color: blueviolet;
+        color: green;
      }
   /*Child selector */
      div > p {
-        color: green;
+        color: white;
      }   
      /* Adjacent sibling selector */
 
      h4 + nav {
-        background-color: green;
-        color: white;
+        background-color: rgb(0, 0, 11);
      }
    /* General sibling selector */
     h3 ~ p {
-        color: red;
+        color: white;
     }
     /* Group selector */
     h1, h2, h3 {
-        font-family: cambria; cochin, Georgia, Times, 'Times New Roman', serif;
-        color: tomato;
+        font-family: cambria; cochin : Georgia, Times, 'Times New Roman', serif;
+        color: maroon; ;
+        text-align: center;
+        text-decoration: underline;
     }
     /* Interactive state*/
     .cta:hover {
         background-color: red;
-        color: white;
+        color: blue;
     }
     .cta-btn:active {
         background-color: green;
@@ -119,11 +132,8 @@ p {
     input:focus {
         border: purple;
     }
-    a::before {
-        content: "navigation link:";
-        color: red;
-    }
+    
     p::after {
-        content: " citation";
+        content: "";
         color: chocolate;
     }

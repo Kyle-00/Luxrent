@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Icons */
+.fa-solid {
+    color: orange;
+    margin-right: 6px;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 20px;
+    background-color: black;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+/* Welcome Card */
+.kyle {
+    box-shadow: 2px 2px 10px grey;
+    width: 500px;
+    padding: 20px;
+    background-color: orangered;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Color Box 1 */
+.background-one {
+    background-color: rgb(145, 50, 100);
+    height: 100px;
+    width: 300px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+/* Color Box 2 */
+.background-two {
+    background-color: rgba(77, 2, 45, 0.3);
+    height: 100px;
+    width: 300px;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: black;
+}
+
+/* Glassmorphism Section */
+.glass {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 700px;
+    height: 400px;
+
+    background-image: url("assets/images/jean-philippe-delberghe-75xPHEQBmvA-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Glass Card */
+.card {
+    position: absolute;
+
+    height: 250px;
+    width: 300px;
+
+    border: solid 1px rgba(255, 255, 255, 0.18);
+
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+
+    background: rgba(255, 255, 255, 0.1);
+
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.8s ease,
+                backdrop-filter 0.8s ease;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: rotateY(5deg) scale(1.05);
+    backdrop-filter: blur(14px);
+    cursor: pointer;
+}
+
+/* Image */
+#logo {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
